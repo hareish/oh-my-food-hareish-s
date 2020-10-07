@@ -1,0 +1,234 @@
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+
+    &__menu {
+        width: 95%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: $shadow-box;
+        overflow: hidden;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    &__titre {
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+
+
+.block__menu--lanote {
+    background-color: $lanote-bc;
+
+    span {
+        @include gradient-text(0deg, $lanote-c1, $lanote-c2, $lanote-c3);
+        font-size: 2.2rem;
+
+    }
+
+    p {
+        color: $lanote-c;
+        font-family: $lanote-font2;
+        font-size: 2.1rem;
+    }
+
+    h3 {
+        color: $lanote-c;
+        font-family: $lanote-font1;
+        font-size: 2.4rem;
+    }
+}
+
+.block__menu--la-palette {
+
+
+    p {
+        background-color: $lapalette-c;
+
+        @include gradient-text(0deg, $lapalette-c1, $lapalette-c2, $lapalette-c3);
+        font-size: 2.2rem;
+
+    }
+
+
+    h3 {
+        color: $lapalette-c;
+        font-family: $lapalette-font2;
+        font-family: 2;
+        font-size: 2.4rem;
+    }
+
+}
+
+.block__menu--chic {
+    background-color: $chic-bc;
+
+    p {
+        @include gradient-text(0deg, $chic-c1, $chic-c2, $chic-c3);
+        font-family: $chic-font1;
+        font-size: 2.1rem;
+        padding: 0 5px;
+    }
+
+    h3 {
+        color: $chic-c;
+        font-family: $chic-font1;
+        font-size: 2.4rem;
+    }
+}
+
+.block__menu--delice {
+    background-color: $delice-bc;
+
+    p {
+        @include gradient-text(0deg, $delice-c1, $delice-c2, $delice-c3);
+        font-family: $delice-font2;
+        font-size: 2.1rem;
+        padding: 0 5px;
+    }
+
+    h3 {
+        color: $delice-c;
+        font-family: $delice-font1;
+        font-size: 2.4rem;
+    }
+
+}
+
+.pro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 55px;
+
+    h2 {
+        background-color: $vert-hf;
+        color: $jaune-hf;
+        padding: 10px 30px;
+        border-radius: 15px;
+        font-size: 1.8rem;
+
+        span {
+            font-size: 0.5rem;
+            position: relative;
+            font-weight: bold;
+            animation: points 1.4s infinite;
+        }
+
+        span:nth-child(2) {
+            animation-delay: .2s;
+        }
+
+        span:nth-child(3) {
+            animation-delay: .4s;
+        }
+    }
+}
+
+@keyframes points {
+    0% {
+        opacity: 0;
+        top: 0;
+    }
+
+    10% {
+        top: -2.5px;
+    }
+
+    20% {
+        opacity: 1;
+        top: -5px;
+    }
+
+    40% {
+        top: 0
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+
+    .block {
+        display: flex;
+        flex-direction: row;
+        align-items: space-evenly;
+        margin: 40px 0;
+
+        &__menu {
+            width: 80%;
+            height: 700px;
+            margin-top: 40px;
+
+            &__titre {
+                transition-property: transform, opacity;
+                transition-duration: 1s;
+
+                h3 {
+                    font-size: 3rem;
+                }
+
+                p {
+                    font-size: 3rem;
+                }
+            }
+
+            &:hover &__carte {
+                transform: scale(1.2);
+                opacity: .3;
+            }
+        }
+    }
+
+    .pro {
+        margin-bottom: 155px;
+
+        h2 {
+            font-size: 2.5rem;
+
+            span {
+                font-size: 0.75rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+
+
+    .block {
+        display: row;
+        flex-direction: wrap;
+        justify-content: space-evenly;
+        margin: 40px 0;
+        padding: 0 3rem;
+
+        &__menu {
+            width: 44%;
+            height: 750px;
+
+            &__carte {
+                width: 70%;
+            }
+        }
+
+
+    }
+
+
+}

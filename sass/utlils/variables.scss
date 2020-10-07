@@ -1,0 +1,78 @@
+// ----------------les couleurs-------------------------------------------COLORS------------------------------------------------------------------------
+
+
+// HEADER, FOOTER
+$jaune-hf: rgb(253, 203, 70);
+$vert-hf: rgb(87, 156, 135);
+$vert-hf-border: rgb(161, 193, 129);
+
+// lanote
+$lanote-bc: rgb(252, 223, 219);
+$lanote-c: rgb(60, 18, 24);
+$lanote-c1: rgb(240, 80, 96);
+$lanote-c2: rgb(242, 106, 100);
+$lanote-c3: rgb(246, 145, 106);
+
+// CHIC
+$chic-bc: rgb(255, 245, 254);
+$chic-c: rgb(199, 116, 18);
+$chic-c1: rgb(199, 116, 18);
+$chic-c2: rgb(172, 107, 175);
+$chic-c3: rgb(147, 74, 248);
+
+// DELIGHT
+$delice-bc: rgb(249, 249, 249);
+$delice-c: rgb(8, 135, 251);
+$delice-c1: rgb(2, 41, 221);
+$delice-c2: rgb(6, 101, 240);
+$delice-c3: rgb(8, 137, 251);
+
+// lapalette
+$lapalette-bc: rgb(253, 255, 253);
+$lapalette-c: rgb(114, 191, 86);
+$lapalette-c1: rgb(62, 146, 58);
+$lapalette-c2: rgb(136, 210, 98);
+$lapalette-c3: rgb(190, 255, 127);
+
+// -------------------------------------------------------------------FONTS--------------------------------------------------------------------------
+
+// HEADER, FOOTER
+$font-hf: -apple-system,
+BlinkMacSystemFont,
+'Segoe UI',
+Roboto,
+Oxygen,
+Ubuntu,
+Cantarell,
+'Open Sans',
+'Helvetica Neue',
+sans-serif;
+// lanote
+$lanote-font1: 'Handlee',
+cursive,
+sans-serif;
+$lanote-font2: 'Devonshire',
+cursive,
+sans-serif;
+// CHIC
+$chic-font1: 'Croissant One',
+cursive,
+sans-serif;
+// delice
+$delice-font1: 'Dancing Script',
+cursive,
+sans-serif;
+$delice-font2: 'Caveat',
+cursive,
+sans-serif;
+// la-palette
+$lapalette-font1: 'Dancing Script',
+cursive,
+sans-serif;
+$lapalette-font2: 'Caveat',
+cursive,
+sans-serif;
+
+// ------------------------------------------------------------------OTHERS--------------------------------------------------------------------------
+
+$shadow-box: 0 0 10px rgba(0, 0, 0, 0.247);

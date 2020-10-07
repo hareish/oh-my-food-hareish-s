@@ -1,0 +1,373 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+td:not([align]),
+th:not([align]) {
+  text-align: left;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: lavenderblush;
+}
+
+.header {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #579c87;
+  border-bottom: 3px solid #a1c181;
+}
+.header h1 {
+  color: #fdcb46;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header h1 {
+    font-size: 4rem;
+  }
+}
+.info {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #579c87;
+  border-bottom: 3px solid #a1c181;
+}
+.info h3 {
+  color: #fdcb46;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .info {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #579c87;
+    border-bottom: 3px solid #a1c181;
+  }
+  .info h3 {
+    color: #fdcb46;
+    padding: 2px 5px;
+    border-radius: 15px;
+    transition: background-color 0.2s;
+  }
+  .info h3 a {
+    font-size: 2.1rem;
+  }
+  .info h3:hover {
+    animation: wiggle 0.3s infinite ease-in-out;
+    background-color: #579c87;
+  }
+}
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  75% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    justify-content: space-between;
+    padding: 0 3%;
+  }
+}
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+}
+.block__menu {
+  width: 95%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.247);
+  overflow: hidden;
+  text-align: center;
+  margin: 15px 0;
+}
+.block__titre {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.block__menu--lanote {
+  background-color: #fcdfdb;
+}
+.block__menu--lanote span {
+  background: -webkit-linear-gradient(0deg, #f05060, #f26a64, #f6916a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.2rem;
+}
+.block__menu--lanote p {
+  color: #3c1218;
+  font-family: "Devonshire", cursive, sans-serif;
+  font-size: 2.1rem;
+}
+.block__menu--lanote h3 {
+  color: #3c1218;
+  font-family: "Handlee", cursive, sans-serif;
+  font-size: 2.4rem;
+}
+
+.block__menu--la-palette p {
+  background-color: #72bf56;
+  background: -webkit-linear-gradient(0deg, #3e923a, #88d262, #beff7f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.2rem;
+}
+.block__menu--la-palette h3 {
+  color: #72bf56;
+  font-family: "Caveat", cursive, sans-serif;
+  font-family: 2;
+  font-size: 2.4rem;
+}
+
+.block__menu--chic {
+  background-color: #fff5fe;
+}
+.block__menu--chic p {
+  background: -webkit-linear-gradient(0deg, #c77412, #ac6baf, #934af8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Croissant One", cursive, sans-serif;
+  font-size: 2.1rem;
+  padding: 0 5px;
+}
+.block__menu--chic h3 {
+  color: #c77412;
+  font-family: "Croissant One", cursive, sans-serif;
+  font-size: 2.4rem;
+}
+
+.block__menu--delice {
+  background-color: #f9f9f9;
+}
+.block__menu--delice p {
+  background: -webkit-linear-gradient(0deg, #0229dd, #0665f0, #0889fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Caveat", cursive, sans-serif;
+  font-size: 2.1rem;
+  padding: 0 5px;
+}
+.block__menu--delice h3 {
+  color: #0887fb;
+  font-family: "Dancing Script", cursive, sans-serif;
+  font-size: 2.4rem;
+}
+
+.pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 55px;
+}
+.pro h2 {
+  background-color: #579c87;
+  color: #fdcb46;
+  padding: 10px 30px;
+  border-radius: 15px;
+  font-size: 1.8rem;
+}
+.pro h2 span {
+  font-size: 0.5rem;
+  position: relative;
+  font-weight: bold;
+  animation: points 1.4s infinite;
+}
+.pro h2 span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.pro h2 span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes points {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+  10% {
+    top: -2.5px;
+  }
+  20% {
+    opacity: 1;
+    top: -5px;
+  }
+  40% {
+    top: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .block {
+    display: flex;
+    flex-direction: row;
+    align-items: space-evenly;
+    margin: 40px 0;
+  }
+  .block__menu {
+    width: 80%;
+    height: 700px;
+    margin-top: 40px;
+  }
+  .block__menu__titre {
+    transition-property: transform, opacity;
+    transition-duration: 1s;
+  }
+  .block__menu__titre h3 {
+    font-size: 3rem;
+  }
+  .block__menu__titre p {
+    font-size: 3rem;
+  }
+  .block__menu:hover .block__menu__carte {
+    transform: scale(1.2);
+    opacity: 0.3;
+  }
+
+  .pro {
+    margin-bottom: 155px;
+  }
+  .pro h2 {
+    font-size: 2.5rem;
+  }
+  .pro h2 span {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .block {
+    display: row;
+    flex-direction: wrap;
+    justify-content: space-evenly;
+    margin: 40px 0;
+    padding: 0 3rem;
+  }
+  .block__menu {
+    width: 44%;
+    height: 750px;
+  }
+  .block__menu__carte {
+    width: 70%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

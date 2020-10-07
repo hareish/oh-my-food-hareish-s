@@ -1,0 +1,22 @@
+.header {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $vert-hf;
+    border-bottom: 3px solid $vert-hf-border;
+
+    h1 {
+        color: $jaune-hf;
+        font-family: $font-hf;
+        font-size: 4rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .header {
+        h1 {
+            font-size: 4rem;
+        }
+    }
+}
